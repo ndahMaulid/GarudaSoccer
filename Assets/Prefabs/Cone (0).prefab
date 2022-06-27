@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4803420072028922158}
   - component: {fileID: 4803420072028922145}
   - component: {fileID: 4803420072028922144}
-  - component: {fileID: 4803420072028922147}
   - component: {fileID: 563485304}
   m_Layer: 0
   m_Name: Cone (0)
@@ -110,19 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8024646, y: 1.0574288}
   m_EdgeRadius: 0
---- !u!114 &4803420072028922147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4803420072028922159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b325aadfed565c746a7c67784fe52f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.1
 --- !u!50 &563485304
 Rigidbody2D:
   serializedVersion: 4
@@ -143,4 +129,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7

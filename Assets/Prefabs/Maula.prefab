@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 2474356593668038174}
   - component: {fileID: 2474356593668038175}
   - component: {fileID: 2474356593668038172}
-  - component: {fileID: 2474356593668038168}
-  - component: {fileID: 2474356593668038171}
+  - component: {fileID: 1054793238}
   m_Layer: 0
   m_Name: Maula
   m_TagString: Untagged
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b887e424fc4e3c743b051847a13b05d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74fef3427ff419a458319dad91074497, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4958333, y: 1.848803}
+    oldSize: {x: 2.4616666, y: 2.4616666}
     newSize: {x: 17.949999, y: 22.185637}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -132,7 +131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!114 &2474356593668038172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,10 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57262e13965ec76469f3dd88c8920961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 850
-  respawnDelay: 1
-  isGrounded: 0
---- !u!114 &2474356593668038168
+  canJump: 0
+  jumpAmount: 100
+  runAmount: 2
+--- !u!114 &1054793238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,22 +161,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   dead: 0
---- !u!95 &2474356593668038171
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2474356593668038178}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 301d2d75513727748960eb5abb248900, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

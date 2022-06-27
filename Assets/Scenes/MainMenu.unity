@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 302.19995, y: 62.69995}
-  m_SizeDelta: {x: -573.63513, y: -179.07404}
+  m_AnchoredPosition: {x: 783, y: 232}
+  m_SizeDelta: {x: -1413.743, y: -564.4446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &38506578
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 5d41fe1ef43a3de4087c60e60e447f83, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -250,6 +250,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38506576}
   m_CullTransparentMesh: 0
+--- !u!1001 &68397812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6069155338621320586, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439979152417679981, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ebf2022f9d203534c8e41bc89bcc6b5b, type: 3}
 --- !u!1 &247770477
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +610,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &437339550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9055369842457731774, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 68397812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fda11fea46b0148abe0f129cbeaa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &437339551 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6982858175546062137, guid: ebf2022f9d203534c8e41bc89bcc6b5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 68397812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &469714561
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +709,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 437339550}
+        m_MethodName: PlayClickClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 593605782}
         m_MethodName: SetActive
         m_Mode: 6
@@ -863,8 +961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 178, y: -34.000015}
-  m_SizeDelta: {x: -34.579712, y: 24.856873}
+  m_AnchoredPosition: {x: 372.99997, y: -116.00001}
+  m_SizeDelta: {x: 131.12949, y: 111.565186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839258748
 MonoBehaviour:
@@ -909,6 +1007,39 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 437339550}
+        m_MethodName: PlayClickClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 437339551}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1827033800}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 839258746}
         m_MethodName: SetActive
         m_Mode: 6
@@ -919,28 +1050,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 839258746}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: sound_volume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &839258749
 MonoBehaviour:
@@ -963,7 +1072,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 1ffab031033fc784aab6bd2813851acc, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1583,8 +1692,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 178, y: -34}
-  m_SizeDelta: {x: -34.579712, y: 24.856873}
+  m_AnchoredPosition: {x: 373, y: -116}
+  m_SizeDelta: {x: 131.12949, y: 111.565186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827033802
 MonoBehaviour:
@@ -1629,9 +1738,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1827033800}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 437339550}
+        m_MethodName: PlayClickClip
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1640,7 +1749,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1827033800}
+      - m_Target: {fileID: 437339551}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 839258746}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -1649,11 +1769,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: sound_volume
-        m_Mode: 4
+      - m_Target: {fileID: 1827033800}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1683,7 +1803,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 5b368d0b6b0bd4646a979a82d57a94f3, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1937,6 +2057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ad000dcdbf5b448b6ced8116223788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinText: {fileID: 0}
+  finalCoinText: {fileID: 0}
 --- !u!1 &2026407739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,6 +2149,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SelectChapter
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 437339550}
+        m_MethodName: PlayClickClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2026407742
