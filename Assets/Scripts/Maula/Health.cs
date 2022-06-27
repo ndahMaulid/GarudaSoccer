@@ -4,27 +4,33 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] float startingHealth = 3f;
-    public float currentHealth { get; private set; }
-    public bool dead;
+  [SerializeField] float startingHealth = 3f;
+  public static float currentHealth;
+  public bool dead;
 
-
-
-    void Awake()
+  void Awake()
+  {
+    if (currentHealth == 0)
     {
-        currentHealth = startingHealth;
+      currentHealth = startingHealth;
     }
+  }
 
-    public void TakeDamage(float damage)
+  public float GetCurrentHealth()
+  {
+    return currentHealth;
+  }
+
+  public void TakeDamage(float damage)
+  {
+    currentHealth = Mathf.Clamp(currentHealth - damage, 0f, startingHealth);
+
+    if (currentHealth <= 0)
     {
-        currentHealth = Mathf.Clamp(currentHealth - damage, 0f, startingHealth);
-
-        if (currentHealth <= 0)
-        {
-            if (!dead)
-            {
-                dead = true;
-            }
-        }
+      if (!dead)
+      {
+        dead = true;
+      }
     }
+  }
 }

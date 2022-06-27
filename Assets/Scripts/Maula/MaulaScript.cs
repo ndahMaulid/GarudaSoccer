@@ -5,50 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class MaulaScript : MonoBehaviour
 {
-  public float jumpForce = 10f;
-  public float respawnDelay = 1f;
-
-  [SerializeField] bool isGrounded = false;
-
-  Rigidbody2D rb;
-  Transform ball;
+  public bool canJump;
+  [SerializeField] float jumpAmount = 10f;
+  Health health;
 
   void Awake()
   {
-    rb = GetComponent<Rigidbody2D>();
+    health = FindObjectOfType<Health>();
   }
 
-  void Update()
+
+  void OnCollisionEnter2D(Collision2D other)
   {
-  }
-  void OnCollisionEnter2D(Collision2D collision)
-  {
-    if (collision.gameObject.CompareTag("ground"))
+    if (other.gameObject.CompareTag("ground"))
     {
-      if (!isGrounded)
-      {
-        isGrounded = true;
-      }
+      canJump = true;
     }
 
-    if (collision.gameObject.CompareTag("obstackle"))
+    if (other.gameObject.CompareTag("obstackle"))
     {
-      GetComponent<Health>().TakeDamage(1);
-      StartCoroutine(Respawn(respawnDelay));
-    }
-  }
-  public void Jump()
-  {
-    if (isGrounded)
-    {
-      rb.AddForce(Vector3.up * jumpForce);
-      isGrounded = false;
+      health.TakeDamage(1);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
   }
 
-  IEnumerator Respawn(float delay)
+  void Jump()
   {
-    yield return new WaitForSeconds(delay);
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    if (canJump)
+    {
+      GetComponent<Rigidbody2D>().velocity = new Vector2(0, jumpAmount);
+      canJump = false;
+    }
   }
 }
