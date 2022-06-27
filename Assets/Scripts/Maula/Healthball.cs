@@ -5,16 +5,22 @@ using UnityEngine.UI;
 
 public class Healthball : MonoBehaviour
 {
-    [SerializeField] Health playerHealth;
-    [SerializeField] Image totalHealthbarImage;
-    [SerializeField] Image currentHealthbarImage;
-    void Start()
-    {
-        totalHealthbarImage.fillAmount = playerHealth.currentHealth / 5f;
-    }
+  Health health;
+  [SerializeField] Image totalHealthbarImage;
+  [SerializeField] Image currentHealthbarImage;
 
-    void Update()
-    {
-        currentHealthbarImage.fillAmount = playerHealth.currentHealth / 5f;
-    }
+  void Awake()
+  {
+    health = FindObjectOfType<Health>();
+  }
+
+  void Start()
+  {
+    totalHealthbarImage.fillAmount = health.GetCurrentHealth() / 5f;
+  }
+
+  void Update()
+  {
+    currentHealthbarImage.fillAmount = health.GetCurrentHealth() / 5f;
+  }
 }
