@@ -6,7 +6,10 @@ TagManager:
   tags:
   - ground
   - obstackle
+  - trickTrigger
   - obstackleDestroyer
+  - coin
+  - checkpoint
   layers:
   - Default
   - TransparentFX
