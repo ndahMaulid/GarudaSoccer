@@ -9,6 +9,7 @@ TagManager:
   - trickTrigger
   - obstackleDestroyer
   - coin
+  - checkpoint
   layers:
   - Default
   - TransparentFX

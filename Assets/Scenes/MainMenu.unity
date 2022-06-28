@@ -450,8 +450,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: -34}
-  m_SizeDelta: {x: 168.44919, y: 52.298088}
+  m_AnchoredPosition: {x: -241, y: -102}
+  m_SizeDelta: {x: 347.26968, y: 332.0521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399598746
 MonoBehaviour:
@@ -496,8 +496,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: exit
+      - m_Target: {fileID: 1974224617}
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -528,7 +528,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 33529333e9c27974ba45b81b0a89568b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1198,8 +1198,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128, y: -34}
-  m_SizeDelta: {x: 168.44919, y: 52.298088}
+  m_AnchoredPosition: {x: 253.7, y: -102.000015}
+  m_SizeDelta: {x: 347.26968, y: 332.0521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951162878
 MonoBehaviour:
@@ -1244,9 +1244,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: play
-        m_Mode: 5
+      - m_Target: {fileID: 867519630}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1276,7 +1276,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: fb7d52f729c6837408d5fa85e3f7b265, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1953,6 +1953,7 @@ GameObject:
   - component: {fileID: 1974224614}
   - component: {fileID: 1974224613}
   - component: {fileID: 1974224617}
+  - component: {fileID: 1974224612}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1960,6 +1961,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1974224612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974224611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d664e2f217b554dac858cc13e08dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitPanel: {fileID: 867519630}
 --- !u!114 &1974224613
 MonoBehaviour:
   m_ObjectHideFlags: 0

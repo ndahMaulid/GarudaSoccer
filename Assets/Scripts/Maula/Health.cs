@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+  [SerializeField] GameObject LoseCanvas;
   [SerializeField] float startingHealth = 3f;
   public static float currentHealth;
   public bool dead;
@@ -30,6 +31,8 @@ public class Health : MonoBehaviour
       if (!dead)
       {
         dead = true;
+        LoseCanvas.SetActive(true);
+        FindObjectOfType<UIStartMenu>().Pause();
       }
     }
   }

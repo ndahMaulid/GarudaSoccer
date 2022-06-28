@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class MaulaScript : MonoBehaviour
 {
@@ -17,16 +19,43 @@ public class MaulaScript : MonoBehaviour
   Animator animator;
   [SerializeField] GameObject WinCanvas;
 
+  int countDown = 3;
+  [SerializeField] TextMeshProUGUI countdownText;
+  bool isStart = false;
+  bool isCoroutineRun = false;
+
+  GameObject[] checkpoints;
+  int currentCheckpoint = 0;
+
   void Awake()
   {
     health = FindObjectOfType<Health>();
     rb = GetComponent<Rigidbody2D>();
     animator = GetComponent<Animator>();
+    checkpoints = GameObject.FindGameObjectsWithTag("checkpoint");
   }
 
-  void FixedUpdate()
+  void Update()
   {
-    Run();
+    if (isStart)
+    {
+      Run();
+      if (checkpoints.Length > 0 && checkpoints[currentCheckpoint + 1] != null)
+      {
+        if (transform.position.x > checkpoints[currentCheckpoint + 1].transform.position.x)
+        {
+          currentCheckpoint++;
+        }
+      }
+
+    }
+    else
+    {
+      if (!isCoroutineRun)
+      {
+        StartCoroutine(Countdown());
+      }
+    }
   }
 
   void OnCollisionEnter2D(Collision2D other)
@@ -77,6 +106,27 @@ public class MaulaScript : MonoBehaviour
   IEnumerator Respawn()
   {
     yield return new WaitForSeconds(respawnTime);
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    isStart = false;
+    transform.position = checkpoints[currentCheckpoint].transform.position;
+  }
+
+  IEnumerator Countdown()
+  {
+    countDown = 3;
+    isCoroutineRun = true;
+    countdownText.gameObject.SetActive(true);
+    while (countDown > 0)
+    {
+      countdownText.text = countDown.ToString();
+      yield return new WaitForSeconds(1f);
+      countDown--;
+    }
+
+    countdownText.text = "GO!";
+
+    yield return new WaitForSeconds(1f);
+    countdownText.gameObject.SetActive(false);
+    isStart = true;
+    isCoroutineRun = false;
   }
 }
